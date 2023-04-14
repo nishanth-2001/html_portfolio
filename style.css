@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+/* 1rem = 16px */
+
+body {
+	background-color: #ffffff;
+	font-family: roboto;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.header {
+	display: flex;
+	position: fixed;
+	z-index: 50;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	background-color: #ffffff;
+	color: #000000;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 4rem;
+	border-bottom-width: 1px;
+	border-color: #E5E7EB;
+}
+
+.logoAnchor {
+	color: inherit;
+	text-decoration: none;
+}
+
+.logo {
+	font-weight: 500;
+}
+
+.logoSmall {
+	display: none;
+}
+
+.navContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+nav {
+	display: flex;
+}
+
+.navLink {
+	display: flex;
+	margin-right: 1.5rem;
+	flex-direction: column;
+	text-decoration: none;
+	color: #000000;
+}
+
+.activeLink {
+	padding-bottom: 1px;
+	border-bottom: 3px solid rgb(255,197,0);
+}
+
+.contianer {
+	min-height: 80vh;
+	padding-bottom: 56px;
+	background-color: #F3F4F6;
+}
+
+.mainContainer {
+	display: flex;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 4rem;
+	flex-direction: column;
+	align-items: flex-start;
+	height: 100%;
+}
+
+.subContainer {
+	margin-top: 56px;
+	color: #000000;
+	font-weight: 300;
+	width: 100%;
+}
+
+.mainHeading {
+	margin-bottom: 0.5rem;
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	font-weight: lighter;
+}
+
+.subHeading {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 300;
+}
+
+.aboutContainer {
+	color: #4B5563;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 300;
+	line-height: 1.625;
+}
+
+.secondHeading {
+	font-weight: inherit;
+	margin-bottom: 1rem;
+	color: #000000;
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+}
+
+.secondaryContent {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.footerEmail {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	transition-property: background-color, border-color, color, fill, stroke;
+	color: #6B7280;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	text-decoration: none;
+}
+
+.footerText {
+	margin-bottom: 1rem;
+	color: #6B7280;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	text-decoration: none;
+}
+
+.footerEmail:hover {
+	color: #1F2937;
+}
+
+/* Device width less than or equal to 640px */
+@media (max-width: 640px) {
+	.logoSmall {
+		display: block;
+	}
+	
+	.logoBig {
+		display: none;
+	}
+
+	.aboutContainer {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+	}
+}
+
+/* Device width greater than or equal to 640px */
+@media (min-width: 640px) {
+	.mainContainer {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.mainHeading {
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	.subHeading {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+
+	.navLink {
+		margin-right: 2rem;
+	}
+}
+
+/* Device width greater than or equal to 768px */
+@media (min-width: 768px) {
+	.mainContainer {
+		padding-left: 9rem;
+		padding-right: 9rem;
+	}
+
+	.secondHeading {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+}
+
+/* Device width greater than or equal to 1024px */
+@media (min-width: 1024px) {
+	.mainContainer {
+		padding-left: 13rem;
+		padding-right: 13rem;
+	}
+
+	.subContainer {
+		margin-top: 70px;
+	}
+
+	.mainHeading {
+		font-size: 3.75rem;
+		line-height: 1;
+	}
+
+	.subHeading {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+
+	.aboutContainer {
+		width: 80%;
+	}
+
+}
+
+/* Device width greater than or equal to 1280px */
+@media (min-width: 1280px) {
+	.mainContainer {
+		padding-left: 20rem;
+		padding-right: 20rem;
+		padding-top: 2rem;
+	}
+}
